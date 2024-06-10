@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    margin: auto;
+    height: 150px;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+nav{
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    margin-bottom: 50px;
+}
+nav > ul{
+    height: 50px;
+    width: 1110px;
+    list-style: none;
+    margin: auto;
+    background-color: white;
+}
+nav > ul > li{
+    float: left;
+}
+nav > ul > li > a{
+    width: 111px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+    color: white;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+nav > ul > li >a:hover{
+    background-color: blue;
+}
+nav > ul ul{
+    position: absolute;
+    display: none;
+    list-style: none;
+}
+nav > ul ul > li > a{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    text-decoration: none;
+    background-color: gray;
+    text-align: left;
+    color: white;
+}
+nav > ul >li:hover > ul{
+    display: block;
+}
+nav > ul ul > li > a:hover{
+    background-color: blue;
+}
+
+article{
+    float: left;
+    border: 1px solid gray;
+    width: 15%;
+    margin-left: 30px;
+}
+article > div{
+    padding: 10px;
+}
+article > div > form{
+    text-align: center;
+    width: 100%;
+}
+article > div > form > header{
+    text-align: center;
+    margin-top: 10px;
+    background-color: #e6e6e6;
+}
+article > div > ul{
+    width: 100%;
+    list-style-type: square;
+}
+article > div > ul > li{
+    display: block;
+}
+article > div > ul > li > a{
+    text-decoration: none;
+    color: green;
+}
+
+article > div > form > header{
+    font-size: 20px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+input[type="submit"]{
+    margin-top: 5px;
+    background-color: #00e600;
+    padding: 5px;
+    border: 1px solid #00cc00;
+    border-radius: 2px;
+    width: 70px;
+}
+article > div > header{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    background-color: #e6e6e6;
+}
+input[type="text"]{
+    width: 100%;
+}
+input[type="password"]{
+    width: 100%;
+}
+
+div.front-end{
+    border: 1px solid gray;
+    padding: 20px;
+    float: right;
+    width: 80%;
+    margin-right: 30px;
+}
+div.front-end > header{
+    text-align: center;
+    font-size: 30px;
+}
+div.profesor{
+    margin-top: 40px;
+    border: 1px solid gray;
+    padding: 20px;
+    float: right;
+    width: 80%;
+    margin-right: 30px;
+}
+div.profesor > header{
+    text-align: center;
+    font-size: 30px;
+}
+div.back-end{
+    margin-top: 40px;
+    border: 1px solid gray;
+    padding: 20px;
+    float: right;
+    width: 80%;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+div.back-end > header{
+    text-align: center;
+    font-size: 30px;
+}
+.entrada{
+    color: green;
+}
+.creditos{
+    color: grey;
+}
+p{
+    font-size: 20px;
+}
+footer{
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: black;
+    clear: right;
+}
+footer > p > a{
+    text-decoration: none;
+    color: green;
+}
+#profesor{
+    color: orange;
+}
+#back-end{
+    color: pink;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        float: none;
+        display: inline-block;
+        margin-right: 0;
+    }
+
+    nav ul ul {
+        position: static;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav ul ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul ul li a {
+        display: block;
+        width: auto;
+        background-color: transparent;
+        color: white;
+        padding: 10px;
+        border: none;
+    }
+
+    nav ul ul li a:hover {
+        background-color: transparent;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    article {
+        float: none;
+        border: 1px solid gray;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    article > div {
+        padding: 10px;
+    }
+
+    div.front-end,
+    div.profesor,
+    div.back-end {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    div.front-end > header,
+    div.profesor > header,
+    div.back-end > header {
+        text-align: center;
+        font-size: 30px;
+    }
+}
